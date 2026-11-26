@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #FF5A1F;
+  --primary-soft: #FFF1EB;
+  --on-primary: #FFFFFF;
+  --ink: #0F0F12;
+  --ink-2: #5A5A66;
+  --ink-3: #9A9AA8;
+  --bg: #FAFAFB;
+  --surface: #FFFFFF;
+  --line: #EFEFF3;
+  --success: #12B76A;
+  --radius-sm: 12px;
+  --radius: 16px;
+  --radius-lg: 22px;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Esconde a barra de rolagem nas categorias mas permite rolar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
